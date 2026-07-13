@@ -1,0 +1,68 @@
+{
+  "binary": {
+    "n_samples": 26953,
+    "RandomForest": {
+      "accuracy": 99.04,
+      "precision": 99.43,
+      "recall": 99.23,
+      "f1": 99.33,
+      "fpr": 1.47
+    },
+    "XGBoost": {
+      "accuracy": 99.26,
+      "precision": 99.61,
+      "recall": 99.36,
+      "f1": 99.49,
+      "fpr": 1.0
+    },
+    "top_features": {
+      "tld": 0.0792,
+      "SymbolCount_Domain": 0.0791,
+      "domain_token_count": 0.0779,
+      "NumberofDotsinURL": 0.0738,
+      "domainlength": 0.0448,
+      "argPathRatio": 0.0432,
+      "CharacterContinuityRate": 0.0347,
+      "ArgUrlRatio": 0.032,
+      "host_letter_count": 0.0258,
+      "delimeter_path": 0.0239
+    }
+  },
+  "multiclass": {
+    "available": true,
+    "classes": [
+      "Defacement",
+      "benign",
+      "malware",
+      "phishing",
+      "spam"
+    ],
+    "n_samples": 26953,
+    "RandomForest": {
+      "accuracy": 96.44,
+      "precision": 96.53,
+      "recall": 94.64,
+      "f1": 95.49,
+      "fpr": 0.94
+    },
+    "XGBoost": {
+      "accuracy": 97.5,
+      "precision": 97.31,
+      "recall": 96.21,
+      "f1": 96.73,
+      "fpr": 0.66
+    },
+    "distribution": {
+      "benign": 7464,
+      "phishing": 7359,
+      "spam": 5331,
+      "Defacement": 5068,
+      "malware": 1731
+    }
+  },
+  "meta": {
+    "source": "ISCX-URL2016 (All.csv)",
+    "n_features": 79,
+    "random_state": 5
+  }
+}
